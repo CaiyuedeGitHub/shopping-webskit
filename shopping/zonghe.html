@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合专场</title>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script>
+        $(function(){
+    $(".leftnu").click(function(){
+    backplay();
+    })
+    $(".rightnu").click(function(){
+    forwardplay();
+    })
+    })
+    function forwardplay(){
+    var dangqt=$("#box img.pic");
+    var nextt;
+    if(dangqt.next("img").length==0) {nextt=$("#box img:first");}//当图片切换到最后一张时，下一张切换为第一张图片
+    else{
+    nextt=dangqt.next("img");
+    }
+    dangqt.animate({opacity:0,left:"1010px"},1000,function(){
+    dangqt.removeClass("pic");
+    });
+    nextt.animate({opacity:1,left:"5px"},2000,function(){
+    nextt.addClass("pic");
+    dangqt.css({left:"5px"});
+    })
+    }
+    function backplay(){
+    var dangqt=$("#box img.pic");
+    var zqingt;
+    if(dangqt.prev("img").length==0) {zqingt=$("#box img:last");}//当图片切换到最后一张时，下一张切换为第一张图片
+    else{
+    zqingt=dangqt.prev("img");
+    }
+    dangqt.animate({opacity:0,left:"-1010px"},1000,function(){
+    dangqt.removeClass("pic");
+    });
+    zqingt.animate({opacity:1,left:"5px"},2000,function(){
+    zqingt.addClass("pic");
+    dangqt.css({left:"5px"});
+    })
+    }
+
+        $(function(){
+            $(".leftnu2").click(function(){
+                backplay2();
+            })
+            $(".rightnu2").click(function(){
+                forwardplay2();
+            })
+        })
+        function forwardplay2(){
+            var dangqt2=$("#box2 img.pic");
+            var nextt2;
+            if(dangqt2.next("img").length==0) {nextt2=$("#box2 img:first");}//当图片切换到最后一张时，下一张切换为第一张图片
+            else{
+                nextt2=dangqt2.next("img");
+            }
+            dangqt2.animate({opacity:0,left:"1010px"},1000,function(){
+                dangqt2.removeClass("pic");
+            });
+            nextt2.animate({opacity:1,left:"5px"},2000,function(){
+                nextt2.addClass("pic");
+                dangqt2.css({left:"5px"});
+            })
+        }
+        function backplay2(){
+            var dangqt2=$("img.pic");
+            var zqingt2;
+            if(dangqt2.prev("img").length==0) {zqingt2=$("#box2 img:last");}//当图片切换到最后一张时，下一张切换为第一张图片
+            else{
+                zqingt2=dangqt2.prev("img");
+            }
+            dangqt2.animate({opacity:0,left:"-1010px"},1000,function(){
+                dangqt2.removeClass("pic");
+            });
+            zqingt2.animate({opacity:1,left:"5px"},2000,function(){
+                zqingt2.addClass("pic");
+                dangqt2.css({left:"5px"});
+            })
+        }
+
+        $(function(){
+            $(".leftnu3").click(function(){
+                backplay3();
+            })
+            $(".rightnu3").click(function(){
+                forwardplay3();
+            })
+        })
+        function forwardplay3(){
+            var dangqt3=$("#box3 img.pic");
+            var nextt3;
+            if(dangqt3.next("img").length==0) {nextt3=$("#box3 img:first");}//当图片切换到最后一张时，下一张切换为第一张图片
+            else{
+                nextt3=dangqt3.next("img");
+            }
+            dangqt3.animate({opacity:0,left:"1010px"},1000,function(){
+                dangqt3.removeClass("pic");
+            });
+            nextt3.animate({opacity:1,left:"5px"},2000,function(){
+                nextt3.addClass("pic");
+                dangqt3.css({left:"5px"});
+            })
+        }
+        function backplay3(){
+            var dangqt3=$("img.pic");
+            var zqingt3;
+            if(dangqt3.prev("img").length==0) {zqingt3=$("#box3 img:last");}//当图片切换到最后一张时，下一张切换为第一张图片
+            else{
+                zqingt3=dangqt3.prev("img");
+            }
+            dangqt3.animate({opacity:0,left:"-1010px"},1000,function(){
+                dangqt3.removeClass("pic");
+            });
+            zqingt3.animate({opacity:1,left:"5px"},2000,function(){
+                zqingt3.addClass("pic");
+                dangqt3.css({left:"5px"});
+            })
+        }
+    </script>
+    </head>
+    <style>
+        .s{
+            height: 1600px;
+            width: 1400px;
+            background: url("img/be6.jpg");
+            position: absolute;
+        }
+        .q1{
+            position: relative;
+            height: 200px;
+            width: 50px;
+            font-family: 迷你简萝卜;
+            font-size:50px;
+            top: 200px;
+            left: 50px;
+            color: blueviolet;
+        }
+        .q2{
+            position: relative;
+            height: 50px;
+            width: 200px;
+            font-family: 迷你简萝卜;
+            font-size:50px;
+            top: 300px;
+            left: 1100px;
+            color: blueviolet;
+        }
+        .q3{
+            position: relative;
+            height: 50px;
+            width: 200px;
+            font-family: 迷你简萝卜;
+            font-size:50px;
+            top: 280px;
+            left: 50px;
+            color: blueviolet;
+        }
+        .s1{
+            position: relative;
+            height: 160px;
+            width: 1400px;
+            top: 0px;
+            left: 560px;
+            color: fuchsia;
+            background: url("img/bt.png") no-repeat;
+        }
+        .q1{
+            height: 10px;
+            width: 1400px;
+        }
+        .q4{
+            font-family: 迷你简萝卜;
+            font-size: 40px;
+            color: blueviolet;
+            text-decoration: none;
+            margin: 0 auto;
+            width: 500px;
+            height: 400px;
+            top: 100px;
+            left:1160px;
+            position: relative;
+            overflow: hidden;
+        }
+    #box{
+        margin: 0 auto;
+        width: 810px;
+        height: 400px;
+        border: 5px solid grey;
+        background-color:lightgrey;
+        position: relative;
+        overflow: hidden;
+        top: 20px;
+        left:80px;
+    }
+    #box2{
+        margin: 0 auto;
+        width: 810px;
+        height: 400px;
+        border: 5px solid grey;
+        background-color:lightgrey;
+        position: relative;
+        overflow: hidden;
+        top:40px;
+        left: -80px;
+    }
+    #box3{
+        margin: 0 auto;
+        width: 810px;
+        height: 400px;
+        border: 5px solid grey;
+        background-color:lightgrey;
+        position: relative;
+        overflow: hidden;
+        top: 60px;
+        left: 80px;
+    }
+    #box img{
+        height: 390px;
+        width: 800px;
+        top:5px;
+        left: 5px;
+        position: absolute;
+        opacity: 0;
+    }
+    #box2 img{
+        height: 390px;
+        width: 800px;
+        top:5px;
+        left: 5px;
+        position: absolute;
+        opacity: 0;
+    }
+    #box3 img{
+        height: 390px;
+        width:800px;
+        top:5px;
+        left: 5px;
+        position: absolute;
+        opacity: 0;
+    }
+    #box img.pic,#box2 img.pic,#box3 img.pic{
+        opacity: 1;
+    }
+    #anniu .leftnu,#anniu2 .leftnu2,#anniu3 .leftnu3{
+        height: 45px;
+        width:45px ;
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        background:url("img/icons.png") no-repeat 0 0;
+    }
+    #anniu .rightnu,#anniu2 .rightnu2,#anniu3 .rightnu3{
+        height: 45px;
+        width:45px ;
+        position: absolute;
+        top: 200px;
+        right: 10px;
+        background:url("img/icons.png") no-repeat 0 -45px;
+    }
+    </style>
+
+    <body>
+    <div class="s">
+        <div class="s1"></div>
+        <div class="q1">鸡尾酒</div>
+        <div id="box">
+            <img class="pic" src="img/a1.png">
+            <img src="img/a2.png">
+            <img src="img/a3.png">
+            <img src="img/a4.png">
+
+            <div id="anniu">
+            <span class="leftnu"></span>
+            <span class="rightnu" ></span>
+            </div>
+         </div>
+        <div class="q2">旅游箱包</div>
+        <div id="box2">
+            <img class="pic" src="img/b1.png">
+            <img src="img/b2.png">
+            <img src="img/b3.png">
+            <img src="img/b4.png">
+            <div id="anniu2">
+            <span class="leftnu2"></span>
+            <span class="rightnu2" ></span>
+            </div>
+        </div>
+        <div class="q3">家居短袜</div>
+        <div id="box3">
+            <img class="pic" src="img/c1.png">
+            <img src="img/c2.png">
+            <img src="img/c3.png">
+            <img src="img/c4.png">
+
+            <div id="anniu3">
+                <span class="leftnu3"></span>
+                <span class="rightnu3" ></span>
+            </div>
+         </div>
+        <a href="Home111.html" class="q4">返回主页</a>
+     </div>
+    </body>
+</html>

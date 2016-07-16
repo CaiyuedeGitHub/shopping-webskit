@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <script src="js/jquery-1.8.0.js"></script>
+   <script>
+    $(function(){
+       $(".img1").mouseenter(function(){
+           $(".s").animate({top:"0px",left:"0px",opacity:0.4,width:"226px",height:"454px"},1000)
+           $(".s").css({color:"yellow",fontSize:"30px"})
+       });
+        $(".img1").mouseleave(function(){
+            $(".s").animate({left:"-300px",opacity:0},1000)
+        });
+        $(".img2").mouseenter(function(){
+            $(".ss").animate({top:"0px",left:"0px",opacity:0.4,width:"226px",height:"454px",marginLeft:"30px"},1000)
+            $(".ss").css({color:"yellow",fontSize:"30px"})
+        });
+        $(".img2").mouseleave(function(){
+            $(".ss").animate({left:"-300px",opacity:0},1000)
+        });
+        $(".img3").mouseenter(function(){
+            $(".sss").animate({top:"0px",left:"0px",opacity:0.4,width:"226px",height:"454px", marginLeft:"30px" },1000)
+            $(".sss").css({color:"yellow",fontSize:"30px"})
+        });
+        $(".img3").mouseleave(function(){
+            $(".sss").animate({left:"-300px",opacity:0},1000)
+        });
+        $(".img1").click(function(){
+            $(".ck").animate({opacity:1},1000)
+        })
+
+    })
+   </script>
+   <style>
+     .box{
+         float: left;
+         position: relative;
+         width: 226px;
+         height: 454px;
+         overflow:hidden;
+     }
+       .img1{
+             background: url("img4/che.png");
+             width:226px;
+             height: 454px;
+             float: left;
+             left: 0px;
+             position: absolute;
+       }
+       .s{
+           float: left;
+           background: grey;
+           opacity: 0.5;
+           position: absolute;
+           left:0px;
+     }
+     .img2{
+          background: url("img4/tbao.png");
+          width: 226px;
+          height:454px;
+          margin-left: 30px;
+          float: left;
+      }
+     .img3{
+         background: url("img4/che.png");
+         width: 226px;
+         height:454px;
+         margin-left: 30px;
+         float: left;
+     }
+     .ss{
+         float: left;
+         background: grey;
+         opacity: 0.5;
+         position: absolute;
+         left:-800px;
+     }
+     .sss{
+         float: left;
+         background: grey;
+         opacity: 0.5;
+         position: absolute;
+         left:-800px;
+     }
+       .s2{
+           background: black;
+           width: 226px;
+           height: 73px;
+           opacity: 1;
+           margin-top: 70px;
+       }
+     .ss2{
+         background: black;
+         width: 226px;
+         height: 73px;
+         opacity: 1;
+         margin-top: 70px;}
+     .sss2{
+         background: black;
+         width: 226px;
+         height: 73px;
+         opacity: 1;
+         margin-top: 70px;
+     }
+       .s3{margin-top: 77px}
+       .ss3{margin-top: 77px}
+       .sss3{margin-top: 77px}
+  .ck{
+      background: url("ck.png");
+      width:1138px;
+      height:506px;
+      opacity: 0;
+      clear:both;
+  }
+
+   </style>
+</head>
+<body background="kk.jpg">
+<div class="box">
+    <div class="img1"></div>
+    <div class="s">
+        <div class="s1"></div>
+    <div class="s2">拼人数</div>
+    <div class="s3"></div>
+      </div>
+</div>
+<div class="box">
+    <div class="img2"></div>
+    <div class="ss">
+        <div class="ss1"></div>
+        <div class="ss2">拼手速</div>
+        <div class="ss3"></div>
+    </div>
+
+</div>
+<div class="box">
+    <div class="img3"></div>
+    <div class="sss">
+        <div class="sss1"></div>
+        <div class="sss2">拼眼力</div>
+        <div class="sss3"></div>
+    </div>
+</div>
+<div class="ck"></div>
+<div10 style="text-align:right;font-size:25px;"><a href="Home111.html"style="color: black;font-family:腾祥孔淼卡通简;text-decoration: none">首页</a></div10>
+</body>
+</html>

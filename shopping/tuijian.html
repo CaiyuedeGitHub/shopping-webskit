@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script>
+        $(function(){
+            $("#li01_content").delay(400).animate({opacity:1,width:'500px',height:'350px'})
+            $("#li01").click(function(){
+                $("#li02_content,#li03_content").animate({opacity:0,width:0})
+                $("#li01_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li01_content").mouseenter(function(){
+                $(".img1").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li01_content").mouseleave(function(){
+                $(".img1").animate({opacity:0},500)
+            });
+            $("#li02").click(function(){
+                $("#li01_content,#li03_content").animate({opacity:0,width:0})
+                $("#li02_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li02_content").mouseenter(function(){
+                $(".img2").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li02_content").mouseleave(function(){
+                $(".img2").animate({opacity:0},500)
+            });
+            $("#li03").click(function(){
+                $("#li01_content,#li02_content").animate({opacity:0,width:0})
+                $("#li03_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li03_content").mouseenter(function(){
+                $(".img3").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li03_content").mouseleave(function(){
+                $(".img3").animate({opacity:0},500)
+            });
+            $("#li04").click(function(){
+                $("#li01_content,#li02_content,#li03_content").animate({opacity:0,width:0})
+            });
+            $("#li05_content").delay(400).animate({opacity:1,width:'500px',height:'350px'})
+            $("#li05").click(function(){
+                $("#li06_content,#li07_content").animate({opacity:0,width:0})
+                $("#li05_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li05_content").mouseenter(function(){
+                $(".img1").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li05_content").mouseleave(function(){
+                $(".img1").animate({opacity:0},500)
+            });
+            $("#li06").click(function(){
+                $("#li05_content,#li07_content").animate({opacity:0,width:0})
+                $("#li06_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li06_content").mouseenter(function(){
+                $(".img2").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li06_content").mouseleave(function(){
+                $(".img2").animate({opacity:0},500)
+            });
+            $("#li07").click(function(){
+                $("#li05_content,#li06_content").animate({opacity:0,width:0})
+                $("#li07_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li07_content").mouseenter(function(){
+                $(".img3").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li07_content").mouseleave(function(){
+                $(".img3").animate({opacity:0},500)
+            });
+            $("#li08").click(function(){
+                $("#li05_content,#li06_content,#li07_content").animate({opacity:0,width:0})
+            });
+            $("#li09_content").delay(400).animate({opacity:1,width:'500px',height:'350px'})
+            $("#li09").click(function(){
+                $("#li10_content,#li11_content").animate({opacity:0,width:0})
+                $("#li09_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li09_content").mouseenter(function(){
+                $(".img1").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li09_content").mouseleave(function(){
+                $(".img1").animate({opacity:0},500)
+            });
+            $("#li10").click(function(){
+                $("#li09_content,#li11_content").animate({opacity:0,width:0})
+                $("#li10_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li10_content").mouseenter(function(){
+                $(".img2").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li10_content").mouseleave(function(){
+                $(".img2").animate({opacity:0},500)
+            });
+            $("#li11").click(function(){
+                $("#li09_content,#li10_content").animate({opacity:0,width:0})
+                $("#li11_content").animate({opacity:1,width:'500px',height:'350px'})
+            });
+            $("#li11_content").mouseenter(function(){
+                $(".img3").animate({opacity:0.4,top:'350px'},300)
+            });
+            $("#li11_content").mouseleave(function(){
+                $(".img3").animate({opacity:0},500)
+            });
+            $("#li12").click(function(){
+                $("#li09_content,#li10_content,#li11_content").animate({opacity:0,width:0})
+            });
+        })
+    </script>
+    <style>
+        .box{
+            height: 420px;
+            width: 950px;
+            position: relative;
+        }
+
+        #ul1,#ul2,#ul3{
+            list-style: none;
+        }
+
+        #ul1 li,#ul2 li,#ul3 li{
+            float: left;
+            border-radius:25px;
+            line-height:90px;
+            text-align:center ;
+            font-family: 腾祥孔淼卡通简;
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+        /*#ul1 li a{*/
+        /*text-decoration: none;*/
+        /*color: antiquewhite;*/
+        /*}*/
+        #li01{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top1.jpg");
+        }
+        #li02{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top2.jpg");
+        }
+        #li03{
+            width: 60px;
+            height:350px;
+            background:url("zhuye/top3.jpg");
+        }
+        #li04{
+            width:60px;
+            height:350px;
+            background:url("zhuye/more.jpg");
+        }
+        #li01_content,#li02_content,#li03_content{
+            background-color: aquamarine;
+            width: 0px;
+            opacity: 0;
+        }
+        #li05{
+            width: 60px;
+            height:350px;
+            background:url("zhuye/top1.jpg");
+        }
+        #li06{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top2.jpg");
+        }
+        #li07{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top3.jpg");
+        }
+        #li08{
+            width:60px;
+            height:350px;
+            background:url("zhuye/more.jpg");
+        }
+        #li05_content,#li06_content,#li07_content{
+            background-color: aquamarine;
+            width: 0px;
+            opacity: 0;
+        }
+        #li09{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top1.jpg");
+        }
+        #li10{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top2.jpg");
+        }
+        #li11{
+            width: 60px;
+            height: 350px;
+            background:url("zhuye/top3.jpg");
+        }
+        #li12{
+            width:60px;
+            height:350px;
+            background:url("zhuye/more.jpg");
+        }
+        #li09_content,#li10_content,#li11_content{
+            background-color: aquamarine;
+            width: 0px;
+            opacity: 0;
+        }
+
+        #li01_content{
+            background: url("zhuye/x1.jpg");;
+        }
+        #li02_content{
+            background: url("zhuye/x2.jpg");
+        }
+        #li03_content{
+            background: url("zhuye/x3.jpg");;
+        }
+        #li05_content{
+            background: url("zhuye/z1.jpg");
+        }
+        #li06_content{
+            background: url("zhuye/z2.jpg");;
+        }
+        #li07_content{
+            background: url("zhuye/z3.jpg");
+        }
+        #li09_content{
+            background: url("zhuye/j1.jpg");;
+        }
+        #li10_content{
+            background: url("zhuye/j2.jpg");
+        }
+        #li11_content{
+            background: url("zhuye/j3.jpg");;
+        }
+
+        #li04,#li08,#li12{
+            color: #ff266e;
+        }
+
+        .img1{
+            opacity: 0;
+            position: absolute;
+            top: 350px;
+            left:120px;
+            width: 460px;
+            height: 30px;
+            line-height: 30px;
+            border-radius:0px;
+            background-color: black;
+            color: aliceblue;
+            font-family: 幼圆;
+        }
+        .img2{
+            opacity: 0;
+            position: absolute;
+            top: 350px;
+            left:180px;
+            width: 460px;
+            height: 30px;
+            line-height: 30px;
+            border-radius:0px;
+            background-color: black;
+            color: aliceblue;
+            font-family: 幼圆;
+        }
+        .img3{
+            opacity: 0;
+            position: absolute;
+            top: 350px;
+            left:240px;
+            width: 460px;
+            height: 30px;
+            line-height: 30px;
+            border-radius:0px;
+            background-color: black;
+            color: aliceblue;
+            font-family: 幼圆;
+        }
+
+
+    </style>
+</head>
+
+<body background="zhuye/bj1aa.jpg">
+<p>
+    <img src="zhuye/bt.jpg">
+</p>
+<div class="box">
+<ul id="ul1">
+    <li id="li01">T<br>o<br>p<br>1</li>
+    <li id="li01_content"><div class="img1">价格：69元</div></li>
+    <li id="li02">T<br>o<br>p<br>2</li>
+    <li id="li02_content"><div class="img2">价格：3.2元</div></li>
+    <li id="li03">T<br>o<br>p<br>3</li>
+    <li id="li03_content"><div class="img3">价格：52元</div></li>
+    <li id="li04">销<br>量<br>最<br>佳</li>
+</ul>
+</div>
+<div class="box">
+<ul id="ul2">
+    <li id="li05">T<br>o<br>p<br>1</li>
+    <li id="li05_content"><div class="img1">价格：42元</div></li>
+    <li id="li06">T<br>o<br>p<br>2</li>
+    <li id="li06_content"><div class="img2">价格：174元</div></li>
+    <li id="li07">T<br>o<br>p<br>3</li>
+    <li id="li07_content"><div class="img3">价格：89元</div></li>
+    <li id="li08">最<br>新<br>产<br>品</li>
+</ul>
+</div>
+<div class="box">
+    <ul id="ul3">
+        <li id="li09">T<br>o<br>p<br>1</li>
+        <li id="li09_content"><div class="img1">信誉：93%↑</div></li>
+        <li id="li10">T<br>o<br>p<br>2</li>
+        <li id="li10_content"><div class="img2">信誉：92%↑</div></li>
+        <li id="li11">T<br>o<br>p<br>3</li>
+        <li id="li11_content"><div class="img3">信誉：89%↑</div></li>
+        <li id="li12">金<br>牌<br>卖<br>家</li>
+    </ul>
+</div>
+<div10 style="text-align:right;font-size:25px;"><a href="Home111.html"style="color: black;font-family:腾祥孔淼卡通简;text-decoration: none">首页</a></div10>
+</body>
+</html>

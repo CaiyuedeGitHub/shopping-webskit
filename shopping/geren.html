@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script>
+        $(function(){
+            $(".ul2").hide();
+           $('#ul1>li').mouseover(function(){
+                   var i=$(this).index();//标记当前的一级菜单的下标
+                   $(".ul2").eq(i).show();//使二级菜单ul2的下标等于当前一级菜单的下标的ul2显示
+                   $(this).siblings().find("ul").hide()//从当前一级菜单兄弟菜单的二级菜单ul2隐藏
+
+           })
+        })
+    </script>
+    <style>
+        .conten{
+            position: relative;
+        }
+        .y1{
+            position: absolute;
+            top: 130px;
+        }
+
+        ul{
+            list-style: none;
+
+        }
+
+        #ul1>li{/*只选中ul子元素li，不包括二级菜单的ul中的li*/
+
+                width: 280px;
+                height: 140px;
+            margin-left: 20px;
+            font-family: 腾祥孔淼卡通简;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+            float: none;
+            position: relative;
+             }
+        #ul1 li.l01{
+              background:url("zhuye/b6.jpg");
+          }
+        #ul1 li.l02{
+            background:url("zhuye/b1.jpg");
+        }
+        #ul1 li.l03{
+            background:url("zhuye/bj1.jpg");
+        }
+        #ul1 li.l04{
+            background:url("zhuye/ji.jpg");
+        }
+        #ul1 li.l05{
+            background:url("zhuye/b3.jpg");
+        }
+        #ul1 .ul2{
+            width: 1500px;
+            height: 30px;
+            margin-top: 30px;
+        }
+
+        #ul1 .ul2 li{
+            background:url("zhuye/bi.jpg");
+            font-family: 华文行楷;
+            width: 200px;
+            height: 30px;
+            margin-left: 250px;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .bt{
+            font-family: 迷你简萝卜;
+            font-size: 50px;
+            top:0px;
+            left: 1050px;
+            position: absolute;
+        }
+        #jtt{
+            float: right;
+            left: 600px;
+            top:0px;
+            position: absolute;
+
+        }
+        .d10{
+            float: right;
+            left: 1300px;
+            top:700px;
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+<body background="b5.jpg">
+<div class="conten"></div>
+<div class="bt">
+    <p>我的火柴人</p>
+</div>
+<div class="y1">
+<ul id="ul1">
+    <li class="l01">
+        <a>会员中心</a>
+        <ul class="ul2">
+            <li><a>会员等级</a></li>
+            <li><a>会员特权</a></li>
+            <li><a>积分兑换</a></li>
+        </ul>
+    </li>
+    <li class="l02"><a>收藏</a>
+        <ul  class="ul2">
+            <li><a>收藏的宝贝</a></li>
+            <li><a>收藏的店铺</a></li>
+        </ul>
+    </li>
+    <li class="l03"><a>足迹</a>
+        <ul  class="ul2">
+            <li><a>浏览过的宝贝</a></li>
+            <li><a>浏览过的店铺</a></li>
+        </ul>
+    </li>
+    <li class="l04" ><a>订单</a>
+        <ul  class="ul2">
+            <li ><a>待付款</a></li>
+            <li><a>待发货</a></li>
+            <li><a>待收货</a></li>
+            <li><a>待评价</a></li>
+            <li><a>退款/售后</a></li>
+        </ul>
+    </li>
+    <li class="l05"><a>我的评价</a>
+        <ul  class="ul2">
+        </ul>
+    </li>
+</ul>
+    <div class="jt">
+        <img src="zhuye/jt.png" id="jtt">
+        <div class="d10" style="text-align:right;font-size:25px;"><a href="Home111.html"style="color: black;font-family:腾祥孔淼卡通简;text-decoration: none">首页</a></div>
+        </div>
+    </div>
+</body>
+</html>
